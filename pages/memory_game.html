@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Memory game</title>
+	<link rel="icon" href="../resources/icon.jpg">
+	<link rel="stylesheet" type="text/css" href="../css/memory.css">
+	<meta charset="UTF-8">
+	<meta name="description" content="Memory game">
+	<meta name="keywords" content="Memory Game">
+	<meta name="author" content="Mersiha Komic,Emira Sehic,Ezudina Topalovic,Belmin Muhovic">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="game">
+			<h3 style="font-size: 24px;"> User : <span id="user" style="font-size: 24px;color:#00e5ff; font-weight: bold;"></span> </h3>
+			<div id = "board" style="margin-bottom: 50px;margin-top: 30px;"> </div>
+			<div id="local_statistics">
+				<h3 style="font-size: 24px;"> Statistics </h3>
+				<p style="font-size: 18px;text-align: left;"> Number of attempts : <span id="number_of_attempts" style="color: #19b9cc;;font-weight: bold">0</span> </p>
+				<p style="font-size: 18px;text-align: left;"> Number of matched pairs : <span id="number_of_matched_pairs" style="color:#19b9cc;font-weight: bold">0</span> </p>
+				<p style="font-size: 18px;text-align: left;"> Successfully : <span id="ratio" style="color:#19b9cc;font-weight: bold">0</span><span style="color:#19b9cc;font-weight: bold"> %</span> </p>
+				<input type="button" value="New Game" onclick="new_game()" class="btn">
+				<input type="button" value="Logout" onclick="window.location.href='/login'" class="btn">	
+			</div>
+		</div>
+		<div id="global_statistics">
+			<h3 style="font-size: 24px;"> Rang list </h3>
+			<ol id="rang_list">
+			</ol>
+		</div>
+	</div>
+</body>
+<script src="../js/memory.js"></script>
+</head>
+</html>
